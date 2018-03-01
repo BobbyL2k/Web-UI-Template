@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  link(rel="stylesheet", href="/css/index.css")
+  .modern-ui
+    .block.block-2 Unlock
+    .block.block-2(type="button" data-toggle="collapse" data-target="#setting-menu" aria-expanded="false" aria-controls="setting-menu") Settings
+    #setting-menu.collapse
+      .spacer
+      h2 Settings
+      .block.block-2 Manage Personals
+      a(href="/login")
+        .block.block-2 Logout
+      .spacer
+    .block.block-2 Voice Command
